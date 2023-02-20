@@ -39,9 +39,10 @@ public class UserController {
         String phone = user.getPhone();
         if (StringUtils.isNotEmpty(phone)) {
             //生成随机的四位数验证码
-           String code = ValidateCodeUtils.generateValidateCode(4).toString();
+//           String code = ValidateCodeUtils.generateValidateCode(4).toString();
+            String code = "9299";
             //调用阿里云的短信服务API来发送短信
-           SMSUtils.sendMessage("蔡氏程序","SMS_269570627",phone,code);
+//           SMSUtils.sendMessage("蔡氏程序","SMS_269570627",phone,code);
 
             //把验证码储存起来
 //            session.setAttribute(phone,code);
